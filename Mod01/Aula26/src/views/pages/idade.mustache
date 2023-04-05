@@ -1,0 +1,11 @@
+{{>partials/header}}
+<h2>Qual ano você nasceu?</h2>
+<form method='GET'>
+    <input type='number' name='ano' placeholder='Digite o ano do seu nascimento'> <br>
+    <input type='submit' value='Enviar'>
+</form>
+{{#showAge}}
+<hr>
+<p>Você nasceu em {{anoNasc}} e tem {{idade}} anos.
+{{/showAge}}
+{{>partials/footer}}

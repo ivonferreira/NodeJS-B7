@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>Página Home</title>
+</head>
+<body>
+    <h1>Titulo da página</h1>
+    <hr>
+    {{#showWelcome}}
+    <p> Opa, tudo bem {{ name }} {{lastName}}? Você já tem {{age}} anos de idade!</p>
+    {{/showWelcome}}
+    {{#showOld}}
+    <p> Você é um idoso tem preferencia no acesso do site</p>
+    {{/showOld}}
+    {{^showOld}}
+    <p> Você é jovem , diz aew mano!!</p>
+    {{/showOld}}
+
+    <hr>
+    <h2>Produtos</h2>
+    <ul>
+        
+        {{#products}}
+            <li>{{title}} - R$ {{price}}</li>
+        {{/products}}
+        {{^products}}
+        <p>Não há produto cadastrado...</p>
+        {{/products}}
+    </ul>
+    <h2>Frases do dia</h2>
+    <ul>
+        
+        {{#frasesDoDia}}
+            <li>{{.}}</li>
+        {{/frasesDoDia}}
+        {{^frasesDoDia}}
+        <p> Não há frase do dia</p>
+        {{/frasesDoDia}}
+    </ul>
+</body>
+</html>
