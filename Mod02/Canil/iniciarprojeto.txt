@@ -1,0 +1,39 @@
+Dependencias globais
+nodemon
+typescript
+ts-node
+    Precisam estar instalados globalmente no pc do projeto
+    para isso fazemos dessa forma:
+
+    npm install -g nodemon typescript ts-node
+
+
+Dependencias não-globais
+express
+mustache-express
+dotenv
+    Precisam estar instalados na pasta do projeto
+    para isso fazemos dessa forma:
+
+    npm install express mustache-express dotenv
+
+    e os types necessários:
+
+    npm install --save-dev @types/express @types/mustache-express @types/node
+
+Ao abrir o arquivo tsconfig.json devemos descomentar:
+    target
+    rootDir .src
+    outDir .dist
+    moduleResolution node
+
+Criar pastas
+    src
+    dist
+Criar Arquivos
+    src/server.ts
+
+No arquivo package.json em scripts criar um script chamado start-dev:
+    "start-dev":"nodemon -e ts,json,mustache src/server.ts"
+Para usar o atalho
+    npm run start-dev
