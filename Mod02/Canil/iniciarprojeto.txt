@@ -12,10 +12,11 @@ Dependencias não-globais
 express
 mustache-express
 dotenv
+typescript
     Precisam estar instalados na pasta do projeto
     para isso fazemos dessa forma:
 
-    npm install express mustache-express dotenv
+    npm install express mustache-express dotenv typescript
 
     e os types necessários:
 
