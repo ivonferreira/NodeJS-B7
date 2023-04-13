@@ -8,7 +8,7 @@ export const home = async (req: Request, res: Response)=>{
         await sequelize.authenticate();
         console.log("Conexão Estabelecida");
     } catch(error){
-        console.log('Deu erro');
+        console.log('Deu erro',error);
     }
     let age: number = 90;
     let showOld: boolean = false;
