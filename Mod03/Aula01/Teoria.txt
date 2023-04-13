@@ -1,0 +1,33 @@
+SERVIDOR - Software que é o próprio banco de dados. 
+CLIENTE - Software que USA o servidor, ou seja, usa o banco de dados.
+
+- INSERIR dados
+- LER dados
+- ALTERAR dados
+- EXCLUIR dados
+
+
+MySQL e PostgreSQL
+- Ambos são open-source, mas o Postgre é mais livre.
+- Funcionam nos principais sistemas operacionais
+- Suportam a grande maioria da linguagens de programação
+
+-MySQL é usado por quem?
+--Facebook
+--Google
+--GitHub
+--NASA
+--Netflix
+
+-PostgreSQL é usado por quem?
+--Apple
+--Facebook
+--Instagram
+--Skype
+--Spotify
+
+MySQL não é case-sensitive, o PostgreSQL é.
+
+------PERFORMANCE------
+
+Geralmente para grandes volumes ou consultas complexas o Postgre tende a ser um pouco mais rápido.
