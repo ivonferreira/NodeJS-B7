@@ -41,13 +41,19 @@ export const home = async (req: Request, res: Response)=>{
                 //[Op.in]:[ 30,68] // É um dos 
                 //[Op.notIn]:[30,68] // Não e´um dos
                 
-            },
-            name: {
+            }
+            /*name: {
                 //[Op.like]: 'Pa%', //Começa com Pa e o resto pode ser qualquer coisa
                 //[Op.like]:'%a%', //tem a letra a em qualquer posição
                 [Op.like] :`%${searchName}%`,
-            }
-        }
+            }*/
+        },
+        order: [
+            ['name','ASC']
+        ],
+        offset:0,
+        limit:3
+
     });
 
     let age: number = 90;
